@@ -7,7 +7,6 @@ export function useInterval(callback, delay) {
     savedCallback.current = callback;
   }, [callback]);
 
-
   useEffect(() => {
     function tick() {
       savedCallback.current();
